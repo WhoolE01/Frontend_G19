@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* valores globales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+/* nav bar */
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav ul li {
+  padding: 15px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.banner {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+}
+.title {
+  font-size: 3em;
+  font-weight: 500;
+}
+.resume {
+  width: 45%;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.btn_primary {
+  background-color: red;
+  color: black;
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  /* font-size: 16px; */
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.btn_primary:hover {
+  background-color: black;
+  color: red;
+  font-weight: bold;
+}
+.img_profile {
+  width: 450px;
+  height: 550px;
+  border-radius: 50%;
+}
+
+/* section works */
+.section_works {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.card {
+  display: flex;
+}
+
+.card div img {
+  width: 250px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 5px;
+  border: solid 2px;
+  box-shadow: 0 15px 25px;
+}
+.text_works {
+  font-size: 12em;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+.container_detail {
+  margin-left: 30px;
+}
+
+.container_detail p {
+  margin-top: 20px;
+  width: 100%;
+}
+.label_dark {
+  background-color: #142850;
+  color: #fff;
+  border-radius: 16px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.text_light {
+  color: #8695a4;
+}
+
+.container_detail a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  height: 0.5px;
+  background-color: red;
+  margin: 50px;
+}
+.link_portafolio {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.link_portafolio:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
